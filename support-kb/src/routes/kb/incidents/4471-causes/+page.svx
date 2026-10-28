@@ -1,0 +1,33 @@
+---
+layout: runbook
+title: "#4471 · two date-handling problems"
+owner: support desk
+status: known
+reviewed: 2026-10-28
+signature: mspalek1
+---
+
+<script>
+  import Callout from '#lib/kb/Callout.svelte';
+  import ProblemBreakdown from '#lib/kb/ProblemBreakdown.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+This page records a later analysis of the reports merged into #4471. The original incident page remains as the historical account of the desk’s initial triage. This page separates the reports by the cause assigned by the knowledge base rules.
+
+<Callout kind="warn">
+The intake tag is a guess based on the reporter’s browser locale. The classification below uses the tenant’s locale, form version, and report channel.
+</Callout>
+
+## Cause breakdown
+
+The table calculates its counts from the deduplicated report export and links each cause to its issue in the public challenge repository.
+
+<ProblemBreakdown />
+
+## What the categories mean
+
+- **Parser:** the shared parser reads dates month-first, which flips dates for tenants whose locale writes the day first.
+- **Form hint:** booking-v3 displays a month-first date hint for tenants whose locale writes the day first.
+
+<RenderStamp {signature} />
