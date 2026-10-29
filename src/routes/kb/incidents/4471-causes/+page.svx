@@ -4,7 +4,7 @@ title: "#4471 · two date-handling problems"
 owner: support desk
 status: known
 reviewed: 2026-10-28
-signature: mspalek1
+signature: v1.eyJzdWIiOiIxODgwIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyNTk2OTQsImV4cCI6MTc5MzM0NjA5NH0.kGWCIw9F9fPSI1JGHcTs7QBGHYf3pghN-ORvVB9lOp0
 ---
 
 <script>
